@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/krishnavalliappan' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/krishnavalliappan/' },
-    { icon: FaInstagram, href: 'https://www.instagram.com/_krishnav24/' },
-    { icon: FaTwitter, href: 'https://x.com/krish_kumar2498' },
-    { icon: FaEnvelope, href: 'mailto:krishnavalliappan02@gmail.com' },
+    { icon: FaGithub, href: 'https://github.com/Rathore-Rajpal' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/rajpal-rathore-4293151b6/' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/rajpal._.rathore/' },
+    { icon: FaTwitter, href: 'https://x.com/RajpalSing66971' },
+    { icon: FaEnvelope, href: 'mailto:rajpalrathore4455@gmail.com' },
   ];
 
   return (
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           <p className="text-lg font-mono">
             Designed & Built by{' '}
             <span className="text-primary font-bold">
-              Krishnakumar
+              Rajpal Singh Rathore
             </span>{' '}
             <span className="animate-pulse inline-block">🚀</span>
           </p>

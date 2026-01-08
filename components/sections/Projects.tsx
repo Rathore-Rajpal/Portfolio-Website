@@ -1,4 +1,5 @@
 // components/sections/Projects.tsx
+"use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from '../ProjectCard';
@@ -20,7 +21,7 @@ const Projects: React.FC = () => {
       >
         <FaCode className="mr-2" /> Projects
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}

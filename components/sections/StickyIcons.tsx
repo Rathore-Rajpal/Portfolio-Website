@@ -15,10 +15,10 @@ const StickyIcons: React.FC = () => {
   const isLargeScreen = useMediaQuery('(min-width: 768px)');
 
   const socialLinks: IconLinkProps[] = [
-    { icon: FaGithub, href: 'https://github.com/krishnavalliappan' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/krishnavalliappan/' },
-    { icon: FaInstagram, href: 'https://www.instagram.com/_krishnav24/' },
-    { icon: FaTwitter, href: 'https://x.com/krish_kumar2498' },
+    { icon: FaGithub, href: 'https://github.com/Rathore-Rajpal' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/rajpal-rathore-4293151b6/' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/rajpal._.rathore/' },
+    { icon: FaTwitter, href: 'https://x.com/RajpalSing66971' },
   ];
 
   useEffect(() => {
@@ -75,10 +75,10 @@ const StickyIcons: React.FC = () => {
           animate={contentControls}
         >
           <a
-            href="mailto:krishnavalliappan02@gmail.com"
+            href="mailto:rajpalrathore4455@gmail.com"
             className="text-foreground hover:text-primary transition-colors duration-200 pb-2"
           >
-            krishnavalliappan02@gmail.com
+            rajpalrathore4455@gmail.com
           </a>
         </motion.div>
         <motion.div 

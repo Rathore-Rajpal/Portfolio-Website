@@ -17,14 +17,14 @@ const Terminal = () => {
 
   const codeLines: CodeLines = useMemo(() => ({
     python: [
-      'print("Hello, World! 👋 I\'m Krishnakumar")',
-      'print("Based in Canada 🍁 🇨🇦")',
-      'print("From Data to Code: Software Developer with 2+ years in Python, JavaScript, and Data Analytics, specializing in Web Development and Automation")'
+      'print("Hello, World! 👋 I\'m Rajpal Singh Rathore")',
+      'print("Based in Pune, Maharashtra, India 🇮🇳")',
+      'print("AI Automation Engineer specializing in Python, n8n, REST APIs, and LLMs — building scalable automation systems and AI-powered applications")'
     ],
     javascript: [
-      'console.log("Hello, World! 👋 I\'m Krishnakumar");',
-      'console.log("Based in Canada 🍁 🇨🇦");',
-      'console.log("From Data to Code: Software Developer with 2+ years in Python, JavaScript, and Data Analytics, specializing in Web Development and Automation");'
+      'console.log("Hello, World! 👋 I\'m Rajpal Singh Rathore");',
+      'console.log("Based in Pune, Maharashtra, India 🇮🇳");',
+      'console.log("AI Automation Engineer specializing in Python, n8n, REST APIs, and LLMs — building scalable automation systems and AI-powered applications");'
     ]
   }), []);
 

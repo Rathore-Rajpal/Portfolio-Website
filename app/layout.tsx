@@ -4,14 +4,14 @@ import { inter, jetbrain_mono } from "@/app/fonts";
 import "./globals.css";
 import { ThemeProvider } from "@/app/ThemeProvider";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { FaHome, FaUser, FaBriefcase, FaCode } from "react-icons/fa";
+import { FaHome, FaUser, FaBriefcase, FaCode, FaTrophy } from "react-icons/fa";
 import StickyIcons from "@/components/sections/StickyIcons";
 import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: "Krishnakumar",
-  description: "Personal portfolio of Krishnakumar",
+  title: "Rajpal Singh Rathore",
+  description: "Personal portfolio of Rajpal Singh Rathore - AI Automation Engineer",
 };
 
 const navItems = [
@@ -29,6 +29,11 @@ const navItems = [
     name: "Projects",
     link: "#projects",
     icon: <FaCode />,
+  },
+  {
+    name: "Achievements",
+    link: "#achievements",
+    icon: <FaTrophy />,
   },
   {
     name: "Work",
@@ -51,23 +56,11 @@ export default function RootLayout({
           sizes="32x32"
           href="./favicon-32x32.png"
         />
-        <meta property="og:title" content="Krishnakumar's Portfolio" />
+        <meta property="og:title" content="Rajpal Singh Rathore - AI Automation Engineer" />
         <meta
           property="og:description"
-          content="Data analyst with a passion for web development and machine learning. Transforming complex data into actionable insights and building innovative web solutions."
+          content="AI Automation Engineer specializing in Python, n8n, REST APIs, and LLMs — building scalable automation systems and AI-powered applications."
         />
-        <meta property="og:url" content="https://krishnakumar.dev" />
-        <meta
-          property="og:image"
-          content="https://krishnakumar.dev/pics/web_screenshot.png"
-        />
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            if (window.location.href === "https://krishnavalliappan.github.io/portfolio-website/") {
-              window.location.replace("https://www.krishnakumar.dev");
-            }
-          `
-        }} />
         <meta property="og:type" content="website" />
       </head>
       <body

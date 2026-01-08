@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import StyledPic from '../Styledpic';
-import { FaLightbulb, FaCode, FaPizzaSlice, FaHiking, FaPuzzlePiece, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaLightbulb, FaCode } from 'react-icons/fa';
 import { useScrollSection } from '@/hooks/use-scroll-section';
 import { CardSpotlight } from '../ui/card-spotlight';
 
@@ -26,22 +26,22 @@ const AboutMe: React.FC = () => {
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">
             <p>
-              👋 Hello there! I&apos;m Krishnakumar, a Data Analyst with a knack for decoding complicated data and spinning it into a meaningful narrative. My fascination for math was nurtured from childhood, all thanks to my math-genius mother.
+              👋 Hello there! I&apos;m Rajpal Singh Rathore, an AI Automation Engineer with hands-on experience building production-grade automation systems and AI-powered applications.
             </p>
             <p>
               <FaCode className="inline-block mr-2" /> 
-              Post my two-year stint as a data analyst, I decided to plunge into the world of academia to pursue my master&apos;s. Here, I found myself teaching Transform Calculus, which was quite an eye-opener. I realized that programming and math weren&apos;t just two separate entities, they were two sides of the same coin. This understanding ignited my interest in data analysis and machine learning.
+              I specialize in designing end-to-end workflows using Python, n8n, REST APIs, and Large Language Models to replace manual, error-prone business processes with scalable and reliable systems.
             </p>
             <p>
-              When I&apos;m not crunching numbers or coding, you might find me:
+              Currently working as an AI Automation Intern, I&apos;ve developed and deployed real-world solutions such as:
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><FaPizzaSlice className="inline-block mr-2" /> On a never-ending quest for the perfect pizza recipe</li>
-              <li><FaHiking className="inline-block mr-2" /> Exploring new hiking trails (and probably getting lost)</li>
-              <li><FaPuzzlePiece className="inline-block mr-2" /> Solving puzzles that make my brain do backflips</li>
+              <li>AI-driven call analysis platforms</li>
+              <li>Internal CRMs and workflow automation tools</li>
+              <li>Virtual assistants used by teams in production</li>
             </ul>
             <p>
-              At present, I&apos;m eagerly diving into the deep end of machine learning and dabbling in web development as a bit of a side hobby. The intersection of data science and technology holds endless possibilities, and I can&apos;t wait to explore them all. I&apos;m a firm believer in lifelong learning and self-improvement, so I seize every opportunity to learn, regardless of the circumstances. And honestly, making life a tad simpler with these skills - now, isn&apos;t that a fun thought?
+              My work focuses on workflow orchestration, API integrations, AI-powered analytics, and system automation — with an emphasis on reliability, performance, and real business impact.
             </p>
           </CardContent>
         </Card>

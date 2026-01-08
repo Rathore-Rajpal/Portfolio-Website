@@ -7,6 +7,7 @@ import AboutMe from "@/components/sections/AboutMe";
 import Work from "@/components/sections/Work";
 import { AnimatePresence } from 'framer-motion';
 import Projects from "@/components/sections/Projects";
+import Achievements from "@/components/sections/Achievements";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
           <Hero />
           <AboutMe />
           <Projects/>
+          <Achievements />
           <Work />
       </div>
     </main>
