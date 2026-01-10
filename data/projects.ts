@@ -32,8 +32,8 @@ export const projects: Project[] = [
     description: "AI-powered platform analyzing calls with 20+ KPIs, role-based dashboards, and automated performance reports.",
     icon: FaPhoneAlt,
     technologies: ["Python", "n8n", "LLMs", "PostgreSQL"],
-    githubLink: "https://github.com/Rathore-Rajpal",
-    demoLink: "https://github.com/Rathore-Rajpal",
+    githubLink: "https://github.com/Rathore-Rajpal/Sales-Call-Analysis",
+    demoLink: "https://sales.rathorerajpal.live",
     skills: [
       { name: "AI/ML Integration" },
       { name: "Workflow Automation" },
@@ -60,8 +60,8 @@ export const projects: Project[] = [
     description: "AI assistant with voice control, browser automation, face authentication, and LLM-powered responses.",
     icon: FaRobot,
     technologies: ["Python", "OpenCV", "LLMs", "APIs"],
-    githubLink: "https://github.com/Rathore-Rajpal",
-    demoLink: "https://github.com/Rathore-Rajpal",
+    githubLink: "https://github.com/Rathore-Rajpal/HeyBuddy",
+    demoLink: "https://heybuddy.rathorerajpal.live",
     skills: [
       { name: "Voice Recognition" },
       { name: "Computer Vision" },
@@ -92,8 +92,8 @@ export const projects: Project[] = [
     description: "Team management CRM with access control, task tracking, leave management, and analytics dashboards.",
     icon: FaUsers,
     technologies: ["Python", "PostgreSQL", "REST APIs"],
-    githubLink: "https://github.com/Rathore-Rajpal",
-    demoLink: "https://github.com/Rathore-Rajpal",
+    githubLink: "https://github.com/Rathore-Rajpal/Internal-Team-CRM",
+    demoLink: "https://internalcrm.rathorerajpal.live",
     skills: [
       { name: "CRM Development" },
       { name: "Access Control" },
@@ -122,8 +122,8 @@ export const projects: Project[] = [
     description: "AI agent converting natural language to SQL queries with vector database schema management.",
     icon: FaBrain,
     technologies: ["Python", "LLMs", "Vector DB", "SQL"],
-    githubLink: "https://github.com/Rathore-Rajpal",
-    demoLink: "https://github.com/Rathore-Rajpal",
+    githubLink: "https://github.com/Rathore-Rajpal/Superbot-Demo",
+    demoLink: "https://superbot.rathorerajpal.live",
     skills: [
       { name: "Natural Language Processing" },
       { name: "SQL Generation" },
