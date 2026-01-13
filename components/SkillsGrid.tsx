@@ -42,11 +42,25 @@ const SkillsGrid = () => {
           variants={skillVariants}
           initial="hidden"
           animate="visible"
-          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          className="bg-card text-card-foreground rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center"
+          whileHover={{ 
+            scale: 1.1, 
+            rotate: [0, -5, 5, 0],
+            transition: { duration: 0.3 } 
+          }}
+          className="bg-card text-card-foreground rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer border border-transparent hover:border-primary/50 transition-all"
         >
-          <div className="text-2xl sm:text-3xl mb-1 text-primary">{skill.icon}</div>
-          <p className="text-xs sm:text-sm font-medium">{skill.name}</p>
+          {/* Animated background on hover */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          />
+          
+          {/* Glow effect */}
+          <motion.div
+            className="absolute inset-0 blur-xl bg-primary/20 opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+          />
+          
+          <div className="text-2xl sm:text-3xl mb-1 text-primary relative z-10 group-hover:scale-110 transition-transform duration-300">{skill.icon}</div>
+          <p className="text-xs sm:text-sm font-medium relative z-10">{skill.name}</p>
         </motion.div>
       ))}
     </motion.div>

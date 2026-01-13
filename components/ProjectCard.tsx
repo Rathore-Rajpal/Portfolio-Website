@@ -35,15 +35,39 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, icon:
 
   return (
     <motion.div
-      className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[350px] flex flex-col"
+      className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[350px] flex flex-col overflow-hidden group"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.05, y: -5 }}
       whileTap={{ scale: 0.98 }}
       onHoverStart={() => setIsClicked(false)}
       onClick={handleCardClick}
     >
+      {/* Animated background gradient on hover */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+      />
+      
+      {/* Animated border glow */}
+      <motion.div
+        className="absolute inset-0 rounded-xl border-2 border-primary opacity-0 group-hover:opacity-100"
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      />
+      
+      {/* Shine effect on hover */}
+      <motion.div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100"
+        initial={{ x: '-100%' }}
+        whileHover={{ x: '100%' }}
+        transition={{ duration: 0.6, ease: 'easeInOut' }}
+        style={{
+          background: 'linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.1), transparent)',
+        }}
+      />
+      
       <motion.div
         className="absolute inset-0 rounded-xl border-2 border-primary"
         initial={{ opacity: 0 }}

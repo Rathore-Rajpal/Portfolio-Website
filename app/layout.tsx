@@ -8,7 +8,8 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaHome, FaUser, FaBriefcase, FaCode, FaTrophy } from "react-icons/fa";
 import StickyIcons from "@/components/sections/StickyIcons";
 import Footer from "@/components/sections/Footer";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import CustomCursor from "@/components/CustomCursor";
 
 export const metadata = {
   title: "Rajpal Singh Rathore",
@@ -79,6 +80,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${jetbrain_mono.variable} ${inter.variable} font-mono antialiased`}
+        style={{ cursor: 'none' }}
       >
         <ThemeProvider
           attribute="class"
@@ -86,6 +88,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <CustomCursor />
           <FloatingNav navItems={navItems} />
           <StickyIcons />
           {children}
