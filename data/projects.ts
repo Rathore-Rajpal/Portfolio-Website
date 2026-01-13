@@ -45,7 +45,7 @@ export const projects: Project[] = [
       overview: "An enterprise-grade AI call analysis platform designed to transform how HR and sales teams evaluate performance. The system automatically processes recorded calls, extracts meaningful insights, and generates comprehensive performance metrics without manual intervention.",
       problem: "Sales and HR teams spend countless hours manually reviewing calls, taking notes, and generating performance reports. This manual process is time-consuming, inconsistent, and prone to human bias. Organizations struggle to scale quality assurance and coaching efforts as their teams grow.",
       solution: "Built an AI-driven platform that automatically transcribes calls, analyzes conversations across 20+ KPIs including engagement levels, sentiment analysis, talk-time ratios, and compliance metrics. The system features role-based dashboards for Admins, Managers, and Employees, generates daily/weekly/monthly reports, and provides AI-powered improvement suggestions tailored to each team member.",
-      techStack: ["Python", "n8n (Workflow Automation)", "REST APIs", "Large Language Models (LLMs)", "Speech-to-Text APIs", "PostgreSQL", "Dashboard UI Framework"],
+      techStack: ["Frontend - React.js (Vite)", "Backend - Node.js", "Database - Supabase", "n8n (Workflow Automation)", "REST APIs", "Large Language Models (LLMs)", "Speech-to-Text APIs", "Vector Embeddings", "RAG", "AWS S3 (Recordings Storage)"],
       screenshots: [
         "/pics/Projects SS/Calling and Sales Call Analysis System/call-analysis-ss-1.png",
         "/pics/Projects SS/Calling and Sales Call Analysis System/call-analysis-ss-2.png",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       overview: "A comprehensive personal AI virtual assistant that goes beyond simple voice commands. Hey Buddy integrates voice interaction, computer vision, browser automation, and intelligent task handling to provide a truly hands-free computing experience.",
       problem: "Users need to manually switch between multiple applications, perform repetitive tasks, and authenticate themselves repeatedly throughout the day. Traditional assistants lack the ability to perform complex system-level operations or understand context across different platforms.",
       solution: "Developed a multi-modal AI assistant that combines speech recognition for voice commands, OpenCV for face authentication, browser automation for web tasks, and LLM integration for intelligent responses. The system seamlessly integrates with Google services and Spotify, executes system-level commands, and generates images via AI APIs, all while maintaining secure access through facial recognition.",
-      techStack: ["Python", "OpenCV (Computer Vision)", "Speech Recognition Libraries", "LLM APIs", "Browser Automation (Selenium/Playwright)", "Spotify API", "Google APIs", "Image Generation APIs"],
+      techStack: ["Python", "OpenCV (Computer Vision)", "Speech Recognition Libraries", "LLM APIs", "Browser Automation (WebBrowser module)", "UI Automation - PyAutoGUI", "MySQL (Contact Management)", "Spotify API", "Google APIs", "Image Generation APIs"],
       screenshots: [
         "/pics/Projects SS/Hey-Buddy/hey-buddy-ss-1.png",
         "/pics/Projects SS/Hey-Buddy/hey-buddy-ss-2.png",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       overview: "A full-featured internal CRM system built to streamline team management, task coordination, leave tracking, and internal communications. The platform centralizes all team operations in one unified interface with intelligent automation and real-time collaboration features.",
       problem: "Organizations struggle with fragmented tools for team management—emails for communication, spreadsheets for task tracking, separate systems for leave management, and manual reporting. This fragmentation leads to inefficiencies, missed deadlines, and poor visibility into team performance.",
       solution: "Created a comprehensive CRM with three-tier access control (Admin, Manager, Employee) that unifies task and project management, automated leave approval workflows, analytics dashboards for performance tracking, and integrated Slack/Discord notifications. The system replaces multiple tools with a single platform that automates routine processes and provides actionable insights.",
-      techStack: ["Python (Backend)", "REST APIs", "PostgreSQL (Database)", "Workflow Automation Engine", "Dashboard UI (React/Next.js)", "Slack/Discord API Integration", "Analytics & Reporting Module"],
+      techStack: ["Frontend - React.js", "Backend - Node.js", "REST APIs", "PostgreSQL (Database)", "n8n - Slack/Discord Reports"],
       screenshots: [
         "/pics/Projects SS/Internal-Team CRM/Screenshot 2026-01-08 212842.png",
         "/pics/Projects SS/Internal-Team CRM/Screenshot 2026-01-08 212853.png",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
       overview: "An intelligent AI agent that democratizes database access by allowing users to query databases using natural language. Superbot eliminates the need for SQL knowledge, making data accessible to non-technical team members while maintaining accuracy and security.",
       problem: "Most team members lack SQL expertise, creating bottlenecks when they need data insights. Data teams are overwhelmed with ad-hoc query requests, slowing down decision-making. Traditional BI tools are rigid and don't support exploratory analysis through conversational interfaces.",
       solution: "Built an AI agent that understands natural language questions, converts them to optimized SQL queries, executes them against the database, and returns results in plain language. The system uses vector databases to maintain and regularly update database schema knowledge, ensuring accurate query generation even as the database evolves. It handles complex queries, joins, aggregations, and follows best practices for query optimization.",
-      techStack: ["Python", "Large Language Models (GPT/Claude)", "Vector Databases (Pinecone/Weaviate)", "SQL (PostgreSQL/MySQL)", "LangChain/LlamaIndex", "Embeddings (OpenAI/HuggingFace)", "Schema Management System"],
+      techStack: ["Large Language Models API (GPT/Gemini)", "Pinecone Vector Database (Schema management)", "Database (Supabase)", "Embeddings (OpenAI/Gemini)", "Frontend (React.js)", "Telegram Bot", "n8n", "RAG"],
       screenshots: [
         "/pics/Projects SS/Superbot/Screenshot 2026-01-08 213155.png",
         "/pics/Projects SS/Superbot/Screenshot 2026-01-08 213359.png",

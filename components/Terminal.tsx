@@ -121,7 +121,7 @@ const Terminal = () => {
           transition={{ delay: 1, duration: 0.4 }}
         >
           <RiTerminalBoxFill className="text-primary mr-2" />
-          <span className="text-primary">krishna@portfolio:~$</span>
+          <span className="text-primary">rajpal@portfolio:~$</span>
           <span className="text-secondary ml-2">&gt;&gt;</span>
           <span className='text-muted-foreground'>{activeTab}</span>
         </motion.div>

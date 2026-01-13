@@ -26,22 +26,25 @@ const AboutMe: React.FC = () => {
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">
             <p>
-              👋 Hello there! I&apos;m Rajpal Singh Rathore, an AI Automation Engineer with hands-on experience building production-grade automation systems and AI-powered applications.
+              👋 I&apos;m an AI Engineer focused on designing and deploying production-ready intelligent systems that solve real-world business problems. My work sits at the intersection of machine learning, large language models (LLMs), and scalable system design.
             </p>
             <p>
               <FaCode className="inline-block mr-2" /> 
-              I specialize in designing end-to-end workflows using Python, n8n, REST APIs, and Large Language Models to replace manual, error-prone business processes with scalable and reliable systems.
+              I specialize in building end-to-end AI solutions using Python, LLMs, vector databases, and modern AI frameworks—covering everything from data ingestion and model orchestration to deployment and optimization in real-world environments.
             </p>
             <p>
-              Currently working as an AI Automation Intern, I&apos;ve developed and deployed real-world solutions such as:
+              Currently working as an AI Engineer Intern, I&apos;ve developed and shipped:
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li>AI-driven call analysis platforms</li>
-              <li>Internal CRMs and workflow automation tools</li>
-              <li>Virtual assistants used by teams in production</li>
+              <li>AI-powered analytics and NLP pipelines for extracting structured insights from unstructured data</li>
+              <li>Intelligent agents and virtual assistants leveraging LLMs, embeddings, and tool-calling</li>
+              <li>Full-stack AI applications with seamless backend–frontend integration and real-time inference</li>
             </ul>
             <p>
-              My work focuses on workflow orchestration, API integrations, AI-powered analytics, and system automation — with an emphasis on reliability, performance, and real business impact.
+              My technical expertise includes Machine Learning, Natural Language Processing (NLP), LLM-based systems, AI agent development, prompt engineering, and retrieval-augmented generation (RAG). I&apos;m particularly interested in building scalable, reliable, and impactful AI systems that move beyond demos and into production.
+            </p>
+            <p>
+              I&apos;m driven by a simple goal: turn cutting-edge AI into practical, high-impact solutions.
             </p>
           </CardContent>
         </Card>
