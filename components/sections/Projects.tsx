@@ -14,12 +14,12 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20" ref={ref}>
       <motion.h2 
-        className="text-2xl sm:text-3xl font-bold text-primary flex items-center justify-center mb-10"
+        className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-pink-light to-blue-light bg-clip-text text-transparent flex items-center justify-center mb-10"
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        <FaCode className="mr-2" /> Projects
+        <FaCode className="mr-2 text-pink-light" /> Projects
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
         {projects.map((project, index) => (

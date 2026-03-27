@@ -15,7 +15,7 @@ const ActionButtons = () => (
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center"
+        className="bg-gradient-to-r from-pink-dark to-pink-medium text-white px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center hover:from-pink-darker hover:to-pink-dark shadow-lg hover:shadow-pink-500/50"
       >
         <FaCode className="mr-2" /> About Me
       </motion.button>
@@ -28,7 +28,7 @@ const ActionButtons = () => (
       <motion.button 
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-secondary text-secondary-foreground px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center"
+        className="bg-gradient-to-r from-blue-dark to-blue-medium text-white px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center hover:from-blue-darker hover:to-blue-dark shadow-lg hover:shadow-blue-600/50"
       >
         <FaFileAlt className="mr-2" /> Resume
       </motion.button>
