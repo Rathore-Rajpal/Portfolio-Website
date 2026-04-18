@@ -23,15 +23,15 @@ const Work: React.FC = () => {
   return (
     <section id="work" className="py-20 px-4 sm:px-6 lg:px-8" ref={ref}>
       <motion.h2 
-        className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-pink-light to-pink-dark bg-clip-text text-transparent flex items-center justify-center mb-10"
+        className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-red-light to-red-dark bg-clip-text text-transparent flex items-center justify-center mb-10"
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        <FaBriefcase className="mr-2 text-pink-light"/> Work Experience
+        <FaBriefcase className="mr-2 text-red-light"/> Work Experience
       </motion.h2>
       <div className="max-w-4xl mx-auto relative">
-        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-light to-blue-light"></div>
+        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-light to-black-light"></div>
         
         {workExperiences.map((experience, index) => (
           <motion.div

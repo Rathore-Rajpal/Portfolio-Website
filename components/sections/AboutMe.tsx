@@ -20,8 +20,8 @@ const AboutMe: React.FC = () => {
       >
           <Card className="w-full bg-card text-card-foreground">
           <CardHeader>
-            <CardTitle className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-light to-pink-light bg-clip-text text-transparent flex items-center">
-              <FaLightbulb className="mr-2 text-blue-light" /> About Me
+            <CardTitle className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-black-light to-red-light bg-clip-text text-transparent flex items-center">
+              <FaLightbulb className="mr-2 text-red-light" /> About Me
             </CardTitle>
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">

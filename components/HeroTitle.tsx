@@ -1,30 +1,18 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { RevealText } from '@/components/ui/reveal-text';
+import { GooeyText } from '@/components/ui/gooey-text-morphing';
+
+const TITLES = [
+  'AI Automation Engineer',
+  'AI Engineer',
+  'Software Developer',
+  'Web Developer',
+  'Python Developer'
+];
 
 const HeroTitle = () => {
-  const titles = [
-    'AI Automation Engineer',
-    'AI Engineer',
-    'Software Developer',
-    'Web Developer',
-    'Python Developer'
-  ];
-  
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        const newIndex = (prevIndex + 1) % titles.length;
-        console.log('Changing title to:', titles[newIndex]); // Debug log
-        return newIndex;
-      });
-    }, 2000); // Change every 2 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -32,20 +20,26 @@ const HeroTitle = () => {
       transition={{ duration: 0.8 }}
       className="text-center mb-8"
     >
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-pink-light via-pink-dark to-blue-dark bg-clip-text text-transparent">Rajpal Singh Rathore</h1>
-      <div className="text-xl md:text-2xl text-foreground h-8 md:h-10 relative">
-        <AnimatePresence mode="wait">
-          <motion.h2
-            key={titles[currentIndex]}
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -20, opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-xl md:text-2xl bg-gradient-to-r from-blue-light to-pink-medium bg-clip-text text-transparent absolute inset-0"
-          >
-            {titles[currentIndex]}
-          </motion.h2>
-        </AnimatePresence>
+      <div className="mb-4" aria-label="Rajpal Singh Rathore">
+        <RevealText
+          text="Rajpal Singh Rathore"
+          textColor="text-white"
+          overlayColor="text-white"
+          fontSize="text-4xl sm:text-5xl md:text-6xl"
+          letterDelay={0.05}
+          overlayDelay={0.035}
+          overlayDuration={0.35}
+          springDuration={550}
+        />
+      </div>
+      <div className="relative h-10 md:h-12 mt-1">
+        <GooeyText
+          texts={TITLES}
+          morphTime={1}
+          cooldownTime={0.25}
+          className="h-full w-full font-semibold"
+          textClassName="text-xl md:text-2xl text-red-medium"
+        />
       </div>
     </motion.div>
   );

@@ -46,12 +46,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, icon:
     >
       {/* Animated background gradient on hover */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-blue-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-black-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
       />
       
       {/* Animated border glow */}
       <motion.div
-        className="absolute inset-0 rounded-xl border-2 border-pink-600 opacity-0 group-hover:opacity-100"
+        className="absolute inset-0 rounded-xl border-2 border-red-600 opacity-0 group-hover:opacity-100"
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -64,12 +64,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, icon:
         whileHover={{ x: '100%' }}
         transition={{ duration: 0.6, ease: 'easeInOut' }}
         style={{
-          background: 'linear-gradient(90deg, transparent, rgba(235, 35, 108, 0.1), transparent)',
+          background: 'linear-gradient(90deg, transparent, rgba(220, 38, 38, 0.1), transparent)',
         }}
       />
       
       <motion.div
-        className="absolute inset-0 rounded-xl border-2 border-pink-dark"
+        className="absolute inset-0 rounded-xl border-2 border-red-dark"
         initial={{ opacity: 0 }}
         animate={{ 
           opacity: isHovered || isClicked ? 1 : 0,
@@ -80,21 +80,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, icon:
           ease: "easeInOut"
         }}
       />
-      <Icon className="text-4xl mb-4 flex-shrink-0 text-pink-light" />
-      <h3 className="text-xl font-bold bg-gradient-to-r from-pink-light to-pink-dark bg-clip-text text-transparent mb-2 flex-shrink-0">{title}</h3>
+      <Icon className="text-4xl mb-4 flex-shrink-0 text-red-light" />
+      <h3 className="text-xl font-bold bg-gradient-to-r from-red-light to-red-dark bg-clip-text text-transparent mb-2 flex-shrink-0">{title}</h3>
       <p className="text-foreground mb-4 flex-grow line-clamp-3">{description}</p>
       <div className="flex flex-wrap gap-2 flex-shrink-0">
         {technologies.slice(0, 4).map((tech, index) => (
           <span key={index} className={`text-xs px-2 py-1 rounded-full ${
             index % 2 === 0 
-              ? 'bg-pink-900/40 text-pink-200' 
-              : 'bg-blue-900/40 text-blue-200'
+              ? 'bg-red-900/40 text-red-200' 
+              : 'bg-black-900/40 text-black-200'
           }`}>
             {tech}
           </span>
         ))}
         {technologies.length > 4 && (
-          <span className="text-xs px-2 py-1 bg-pink-900/40 text-pink-200 rounded-full">
+          <span className="text-xs px-2 py-1 bg-red-900/40 text-red-200 rounded-full">
             +{technologies.length - 4}
           </span>
         )}

@@ -34,8 +34,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className={`transition-colors duration-200 ${
                   index % 2 === 0 
-                    ? 'text-pink-light hover:text-pink-light' 
-                    : 'text-blue-light hover:text-blue-light'
+                    ? 'text-red-light hover:text-red-light' 
+                    : 'text-black-light hover:text-black-light'
                 }`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
         >
           <p className="text-lg font-mono">
             Designed & Built by{' '}
-            <span className="bg-gradient-to-r from-pink-light to-pink-dark bg-clip-text text-transparent font-bold">
+            <span className="bg-gradient-to-r from-red-light to-red-dark bg-clip-text text-transparent font-bold">
               Rajpal Singh Rathore
             </span>{' '}
             <span className="animate-pulse inline-block">🚀</span>

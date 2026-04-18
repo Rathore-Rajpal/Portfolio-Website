@@ -8,7 +8,7 @@ const MagicButton = ({
   return (
     <button className="relative inline-flex h-12 w-full overflow-hidden 
     rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10 mt-3">
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ff99c4_0%,#3915b0_25%,#ff4d88_50%,#7c5cff_75%,#ff99c4_100%)]" />
+      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ff6b6b_0%,#1a1a1a_25%,#ff4444_50%,#4b5563_75%,#ff6b6b_100%)]" />
       <span className={`inline-flex h-full w-full cursor-pointer 
       items-center justify-center rounded-lg bg-slate-950
       px-7 text-sm font-medium text-primary backdrop-blur-3xl gap-2 ${otherClasses}`}>

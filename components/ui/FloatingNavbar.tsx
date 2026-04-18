@@ -49,13 +49,14 @@ export const FloatingNav = ({
       <nav className="flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20">
         <Link href="#home">
           <motion.span
-            className="text-3xl font-bold mb-2 sm:mb-0 cursor-pointer"
+            className="text-3xl font-bold mb-2 sm:mb-0 cursor-pointer flex items-center gap-2"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <span className="text-primary">Rajpal</span>
-            <span className="text-foreground">.dev</span>
+            <span className="text-2xl">🐞</span>
+            <span className="text-primary">DE</span>
+            <span className="text-foreground">-BUG</span>
           </motion.span>
         </Link>
         <ul className="flex space-x-1">

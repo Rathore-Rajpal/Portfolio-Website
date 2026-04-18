@@ -47,18 +47,18 @@ const SkillsGrid = () => {
             rotate: [0, -5, 5, 0],
             transition: { duration: 0.3 } 
           }}
-          className={`bg-card text-card-foreground rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer border border-transparent transition-all ${
+          className={`bg-black/20 text-card-foreground rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer border border-white/10 backdrop-blur-sm transition-all ${
             index % 2 === 0 
-              ? 'hover:border-pink-light/50' 
-              : 'hover:border-blue-light/50'
+              ? 'hover:border-red-light/60' 
+              : 'hover:border-black-light/60'
           }`}
         >
           {/* Animated background on hover */}
           <motion.div
             className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
               index % 2 === 0 
-                ? 'bg-gradient-to-br from-pink-500/20 to-transparent' 
-                : 'bg-gradient-to-br from-blue-500/20 to-transparent'
+                ? 'bg-gradient-to-br from-red-500/20 to-transparent' 
+                : 'bg-gradient-to-br from-black-500/20 to-transparent'
             }`}
           />
           
@@ -66,15 +66,15 @@ const SkillsGrid = () => {
           <motion.div
             className={`absolute inset-0 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300 ${
               index % 2 === 0 
-                ? 'bg-pink-500/20' 
-                : 'bg-blue-500/20'
+                ? 'bg-red-500/20' 
+                : 'bg-black-500/20'
             }`}
           />
           
           <div className={`text-2xl sm:text-3xl mb-1 relative z-10 group-hover:scale-110 transition-transform duration-300 ${
             index % 2 === 0 
-              ? 'text-pink-light' 
-              : 'text-blue-light'
+              ? 'text-red-light' 
+              : 'text-black-light'
           }`}>{skill.icon}</div>
           <p className="text-xs sm:text-sm font-medium relative z-10">{skill.name}</p>
         </motion.div>

@@ -74,10 +74,10 @@ const Terminal = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-card text-card-foreground rounded-lg p-6 mb-8 shadow-lg relative overflow-hidden"
+      className="bg-black/20 text-card-foreground rounded-lg p-6 mb-8 shadow-lg shadow-black/40 relative overflow-hidden border border-white/10 backdrop-blur-sm"
     >
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"
+        className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"
         animate={{
           backgroundPosition: ['0% 0%', '100% 100%'],
           opacity: [0.3, 0.5]

@@ -4,8 +4,7 @@ import Script from "next/script";
 import { inter, jetbrain_mono } from "@/app/fonts";
 import "./globals.css";
 import { ThemeProvider } from "@/app/ThemeProvider";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { FaHome, FaUser, FaBriefcase, FaCode, FaTrophy } from "react-icons/fa";
+import { AnimatedNavFramer } from "@/components/ui/navigation-menu";
 import StickyIcons from "@/components/sections/StickyIcons";
 import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react";
@@ -15,34 +14,6 @@ export const metadata = {
   title: "Rajpal Singh Rathore",
   description: "Personal portfolio of Rajpal Singh Rathore - AI Automation Engineer",
 };
-
-const navItems = [
-  {
-    name: "Home",
-    link: "#home",
-    icon: <FaHome />,
-  },
-  {
-    name: "About",
-    link: "#about",
-    icon: <FaUser />,
-  },
-  {
-    name: "Projects",
-    link: "#projects",
-    icon: <FaCode />,
-  },
-  {
-    name: "Achievements",
-    link: "#achievements",
-    icon: <FaTrophy />,
-  },
-  {
-    name: "Work",
-    link: "#work",
-    icon: <FaBriefcase />,
-  },
-];
 
 export default function RootLayout({
   children,
@@ -89,7 +60,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <CustomCursor />
-          <FloatingNav navItems={navItems} />
+          <AnimatedNavFramer />
           <StickyIcons />
           {children}
           <Footer />
