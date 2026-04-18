@@ -35,11 +35,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, description, icon:
 
   return (
     <motion.div
-      className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[350px] flex flex-col overflow-hidden group"
+      className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[350px] flex flex-col overflow-hidden group [transform-style:preserve-3d]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      whileHover={{ scale: 1.05, y: -5 }}
+      style={{ transformPerspective: 1000 }}
+      whileHover={{ scale: 1.04, y: -6, rotateX: 3, rotateY: -3 }}
       whileTap={{ scale: 0.98 }}
       onHoverStart={() => setIsClicked(false)}
       onClick={handleCardClick}

@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20" ref={ref}>
       <motion.h2 
-        className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-red-light to-black-light bg-clip-text text-transparent flex items-center justify-center mb-10"
+        className="section-title text-2xl sm:text-3xl font-bold bg-gradient-to-r from-red-light to-black-light bg-clip-text text-transparent flex items-center justify-center mb-10"
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
@@ -25,6 +25,7 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
+            className="project-card-item"
             onHoverStart={() => setHoveredIndex(index)}
             onHoverEnd={() => setHoveredIndex(null)}
             initial={{ opacity: 0, y: 50 }}

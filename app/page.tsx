@@ -6,10 +6,13 @@ import { AnimatePresence } from 'framer-motion';
 import Projects from "@/components/sections/Projects";
 import Achievements from "@/components/sections/Achievements";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import PremiumScrollEffects from "@/components/animations/PremiumScrollEffects";
 
 const Home = () => {
   return (
     <AnimatePresence>
+      <PremiumScrollEffects />
+      <div id="scroll-progress" className="fixed top-0 left-0 z-[70] h-[2px] w-full bg-gradient-to-r from-red-medium via-red-light to-black-light" />
       <AnimatedBackground />
       <Hero />
       <main className="relative flex justify-center items-center flex-col mx-auto w-full pt-16 sm:px-10 px-5">

@@ -3,14 +3,13 @@ import React from 'react';
 import HeroTitle from '@/components/HeroTitle';
 import Terminal from '@/components/Terminal';
 import SkillsGrid from '@/components/SkillsGrid';
-import ActionButtons from '@/components/ActionButtons';
 import { SmokeBackground } from '@/components/ui/spooky-smoke-animation';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative w-full min-h-screen overflow-hidden">
+    <section id="hero" className="relative w-full min-h-screen overflow-hidden">
       {/* Smoke Animation Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="hero-bg-parallax absolute inset-0 z-0">
         <SmokeBackground smokeColor="#DC2626" />
       </div>
 
@@ -23,7 +22,6 @@ const Hero = () => {
           <HeroTitle />
           <Terminal />
           <SkillsGrid />
-          <ActionButtons />
         </div>
       </div>
     </section>

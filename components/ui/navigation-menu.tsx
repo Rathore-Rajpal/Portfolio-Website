@@ -6,11 +6,12 @@ import { Navigation, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
-  { name: "Work", href: "#work" },
+  { name: "Experience", href: "#experience" },
+  { name: "Resume", href: "/pdf/resume.pdf" },
 ];
 
 const EXPAND_SCROLL_THRESHOLD = 80;
@@ -141,6 +142,8 @@ export function AnimatedNavFramer() {
             <motion.a
               key={item.name}
               href={item.href}
+              target={item.href.startsWith("/pdf/") ? "_blank" : undefined}
+              rel={item.href.startsWith("/pdf/") ? "noopener noreferrer" : undefined}
               variants={itemVariants}
               onClick={(e) => e.stopPropagation()}
               className="text-sm font-medium text-foreground/80 hover:text-red-light hover:bg-red-500/10 rounded-md transition-colors px-2 py-1"

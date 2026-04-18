@@ -74,7 +74,7 @@ const Terminal = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-black/20 text-card-foreground rounded-lg p-6 mb-8 shadow-lg shadow-black/40 relative overflow-hidden border border-white/10 backdrop-blur-sm"
+      className="-mt-2 sm:-mt-4 bg-black/20 text-card-foreground rounded-lg p-6 mb-8 shadow-lg shadow-black/40 relative overflow-hidden border border-white/10 backdrop-blur-sm"
     >
       <motion.div
         className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"
@@ -104,7 +104,7 @@ const Terminal = () => {
           {['python', 'javascript'].map((lang, index) => (
             <motion.button
               key={lang}
-              className={`mr-2 px-3 py-1 rounded-t-lg ${activeTab === lang ? 'bg-primary text-primary-foreground' : 'bg-secondary text-secondary-foreground'}`}
+              className={`mr-2 px-3 py-1 rounded-t-lg ${activeTab === lang ? 'bg-[#b91c1c]/30 text-white' : 'bg-black/40 text-white/80'}`}
               onClick={() => handleTabChange(lang as 'python' | 'javascript')}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -120,10 +120,10 @@ const Terminal = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1, duration: 0.4 }}
         >
-          <RiTerminalBoxFill className="text-primary mr-2" />
-          <span className="text-primary">rajpal@portfolio:~$</span>
-          <span className="text-secondary ml-2">&gt;&gt;</span>
-          <span className='text-muted-foreground'>{activeTab}</span>
+          <RiTerminalBoxFill className="text-[#b91c1c] mr-2" />
+          <span className="text-[#b91c1c]">rajpal@portfolio:~$</span>
+          <span className="text-white ml-2">&gt;&gt;</span>
+          <span className='text-white'>{activeTab}</span>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -135,16 +135,16 @@ const Terminal = () => {
               {typedLines[lang as 'python' | 'javascript'].map((line, index) => (
                 <motion.div
                   key={index}
-                  className={index <= currentLine[lang] ? 'text-primary' : 'text-muted-foreground'}
+                  className={index <= currentLine[lang] ? 'text-[#b91c1c]' : 'text-white/80'}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.4 + index * 0.2, duration: 0.4 }}
                 >
-                  <span className="text-secondary mr-2">&gt;&gt;</span>
-                  <span className="text-muted-foreground">
+                  <span className="text-white mr-2">&gt;&gt;</span>
+                  <span className="text-white">
                     {line.slice(0, lang === 'python' ? 6 : 12)}
                   </span>
-                  <span className="text-primary">
+                  <span className="text-[#b91c1c]">
                     {line.slice(lang === 'python' ? 6 : 12)}
                   </span>
                   {index === currentLine[lang] && isTyping[lang] && <span className="animate-blink">|</span>}

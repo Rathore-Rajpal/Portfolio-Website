@@ -15,7 +15,7 @@ const Achievements: React.FC = () => {
   return (
     <section id="achievements" className="py-20" ref={ref}>
       <motion.h2 
-        className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-black-dark to-red-light bg-clip-text text-transparent flex items-center justify-center mb-10"
+        className="section-title text-2xl sm:text-3xl font-bold bg-gradient-to-r from-black-dark to-red-light bg-clip-text text-transparent flex items-center justify-center mb-10"
         initial={{ opacity: 0, y: 20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
@@ -29,13 +29,13 @@ const Achievements: React.FC = () => {
           return (
             <motion.div
               key={achievement.id}
+              className="achievement-card-item relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[280px] flex flex-col"
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
               initial={{ opacity: 0, y: 50 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               onClick={() => router.push(`/achievement?id=${achievement.id}`)}
-              className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[280px] flex flex-col"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -62,7 +62,7 @@ const Achievements: React.FC = () => {
               <h3 className={`text-xl font-bold bg-gradient-to-r ${isEvenIndex ? 'from-red-light to-red-medium' : 'from-black-light to-black-medium'} bg-clip-text text-transparent mb-2 flex-shrink-0`}>{achievement.title}</h3>
               <p className="text-foreground mb-3 flex-grow line-clamp-3">{achievement.description}</p>
               <div className={`flex items-center justify-between pt-3 border-t ${isEvenIndex ? 'border-red-500/20' : 'border-black-500/20'}`}>
-                <span className="text-sm text-muted-foreground">{achievement.date}</span>
+                <span className="achievement-count text-sm text-muted-foreground">{achievement.date}</span>
                 <span className={`text-sm font-semibold ${isEvenIndex ? 'text-red-light' : 'text-black-light'}`}>View Details →</span>
               </div>
             </motion.div>
