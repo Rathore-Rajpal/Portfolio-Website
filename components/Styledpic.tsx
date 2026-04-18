@@ -12,12 +12,12 @@ const StyledPic: React.FC = () => {
 
   return (
     <div 
-      className="relative max-w-[300px] md:max-w-full md:w-full aspect-square cursor-pointer"
+      className="relative w-full h-full cursor-pointer"
       onClick={handleInteraction}
       onMouseEnter={handleInteraction}
     >
       <motion.div 
-        className="wrapper relative w-full h-full rounded-lg bg-primary shadow-md overflow-hidden"
+        className="wrapper relative w-full h-full bg-transparent overflow-hidden"
         animate={isAnimating ? {
           scale: [1, 1.05, 1],
           rotate: [0, 5, -5, 0],
@@ -33,26 +33,13 @@ const StyledPic: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src="/pics/photo.jpg"
+            src="/pics/profile-removebg.png"
             alt="Profile"
             fill
-            className="rounded-lg object-cover"
+            className="object-contain object-bottom"
           />
         </motion.div>
-        <motion.div
-          className="absolute inset-0 bg-primary opacity-0"
-          animate={isAnimating ? { opacity: 0.2 } : { opacity: 0 }}
-          transition={{ duration: 0.3 }}
-        />
       </motion.div>
-      <motion.div
-        className="absolute -bottom-2 -right-4 w-full h-full border-2 border-primary rounded-lg"
-        animate={isAnimating ? { 
-          scale: [1, 1.1, 1],
-          rotate: [0, -3, 0],
-        } : {}}
-        transition={{ duration: 0.5 }}
-      />
     </div>
   );
 };
